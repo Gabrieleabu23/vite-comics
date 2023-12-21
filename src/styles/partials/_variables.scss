@@ -1,8 +1,12 @@
 $colore:#2c2a2a;
-$boh:red;
+// $blu_active_border:#0280f6;
 $black_background:#1c1c1c;
 $height_container:100px;
 a{
     text-decoration: none;
     
+}
+.blu_active_border{
+    border-bottom: 1px solid #0280f6;
+    padding: 20px 0px;
 }

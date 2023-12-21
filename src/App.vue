@@ -10,7 +10,7 @@ import AppHeader from './components/AppHeader.vue'
 </template>
 
 <style lang="scss">
-@use './styles/general' as *;
+@use './styles/general.scss' as *;
 @use './styles/partials/variables' as *;
 
 

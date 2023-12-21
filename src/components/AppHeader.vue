@@ -6,43 +6,53 @@ export default {
             listPages: [
                 {
                     name: 'CHARACTERS',
-                    url: '#CHARACTERS'
+                    url: '#CHARACTERS',
+                    active: false
                 },
                 {
                     name: 'COMICS',
-                    url: '#COMICS'
+                    url: '#COMICS',
+                    active: false
                 },
                 {
                     name: 'MOVIES',
-                    url: '#MOVIES'
+                    url: '#MOVIES',
+                    active: false
                 },
                 {
                     name: 'TV',
-                    url: '#TV'
+                    url: '#TV',
+                    active: false
                 },
                 {
                     name: 'GAMES',
-                    url: '#GAMES'
+                    url: '#GAMES',
+                    active: false
                 },
                 {
                     name: 'COLLECTIBLES',
-                    url: '#COLLECTIBLES'
+                    url: '#COLLECTIBLES',
+                    active: false
                 },
                 {
                     name: 'VIDEOS',
-                    url: '#VIDEOS'
+                    url: '#VIDEOS',
+                    active: false
                 },
                 {
                     name: 'FANS',
-                    url: '#FANS'
+                    url: '#FANS',
+                    active: false
                 },
                 {
                     name: 'NEWS',
-                    url: '#NEWS'
+                    url: '#NEWS',
+                    active: false
                 },
                 {
                     name: 'SHOP',
-                    url: '#SHOP'
+                    url: '#SHOP',
+                    active: false
                 },
 
 
@@ -60,7 +70,7 @@ export default {
             <div class="flex-container">
                 <img src="../assets/img/dc-logo.png" alt="">
                 <ul class="flex-container">
-                    <li v-for="pages in listPages">
+                    <li v-for="pages in listPages" :class="pages.active ? 'blu_active_border' : ''" @mouseover="pages.active=!pages.active" @mouseout="pages.active=!pages.active">
                         <a :href="pages.url" class="black_a_color">{{pages.name}}</a>
                     </li>
                 </ul>
@@ -71,7 +81,8 @@ export default {
 
 <style  scoped lang="scss">
 
-@use './styles/partials/_variables.scss' as *;
+@import '../styles/general.scss';
+@import '../styles/partials/_variables';
 header{
     padding: 2rem;
     background-color: white;
@@ -82,10 +93,17 @@ header{
 ul{
     list-style-type: none;
     li{
-        padding: 0.8rem;
+        // padding: 0.8rem;
         a{
-            color: $boh;
+            color: $colore;
+            padding: 0.8rem;
+            // border-bottom: 1px solid $blu_active_border;
+           
         }
+        // &:hover > {
+        //     border-bottom: $blu_active_border;
+        // }
+       
     }
 }
 
