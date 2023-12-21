@@ -6,9 +6,12 @@ import AppHeader from './components/AppHeader.vue'
 </script>
 
 <template>
-  <h1>asd</h1>
+ <AppHeader/>
 </template>
 
 <style lang="scss">
 @use './styles/general' as *;
+@use './styles/partials/variables' as *;
+
+
 </style>

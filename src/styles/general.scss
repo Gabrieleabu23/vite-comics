@@ -1,1 +1,21 @@
 @use './partials/variables' as *;
+@import url('https://fonts.cdnfonts.com/css/core-sans-a');
+// body
+body{
+    background-color: #222222;
+    font-family: 'Core Sans A', sans-serif;
+}
+// main container
+.main-container{
+    width: 75%;
+    margin: 0 auto;
+    // height: $height_container;
+    // DEBUG
+    // border: 1px solid black;
+}
+// FLEX CONTAINER
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
