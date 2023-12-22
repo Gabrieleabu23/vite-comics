@@ -65,7 +65,7 @@ export default {
 </script>
 
 <template>
-    <header class="$hei">
+    <header class="">
         <div class="main-container">
             <div class="flex-container">
                 <img src="../assets/img/dc-logo.png" alt="">
