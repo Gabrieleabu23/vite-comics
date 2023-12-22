@@ -3,6 +3,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppMainBlue from './components/AppMainBlue.vue'
+import AppFooter from './components/AppFooter.vue'
 
 
 </script>
@@ -11,6 +12,7 @@ import AppMainBlue from './components/AppMainBlue.vue'
  <AppHeader/>
  <AppMain/>
  <AppMainBlue/>
+ <AppFooter/>
 </template>
 
 <style lang="scss">
