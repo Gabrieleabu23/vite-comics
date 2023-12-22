@@ -2,6 +2,7 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
+import AppMainBlue from './components/AppMainBlue.vue'
 
 
 </script>
@@ -9,6 +10,7 @@ import AppMain from './components/AppMain.vue'
 <template>
  <AppHeader/>
  <AppMain/>
+ <AppMainBlue/>
 </template>
 
 <style lang="scss">
