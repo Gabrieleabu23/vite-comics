@@ -26,25 +26,25 @@ export default {
             ],
             social_list: [
                 {
-                    name: "FACEBOOK",
+                    name: "#FACEBOOK",
                     url_img: '../assets/img/footer-facebook.png'
                 },
                 {
-                    name: "TWITTER",
+                    name: "#TWITTER",
                     url_img: '../assets/img/footer-twitter.png'
                 },
                 {
-                    name: "YOUTUBE",
+                    name: "#YOUTUBE",
                     url_img: '../assets/img/footer-youtube.png'
                 },
                 {
-                    name: "PINTEREST",
+                    name: "#PINTEREST",
                     url_img: '../assets/img/footer-pinterest.png'
                 },
                 {
-                    name: "PERISCOPE",
+                    name: "#PERISCOPE",
                     url_img: '../assets/img/footer-periscope.png'
-                },
+                }
             ]
         }
     },
@@ -97,10 +97,8 @@ export default {
                         <h4>FOLLOW US!</h4>
                         <ul class="flex-container">
                             <li v-for="element in social_list">
-                                
-                                   <a href=""><img :src="getImagePath(element.url_img)"></a>  
+                                   <a :href=element.name><img :src="getImagePath(element.url_img)"></a>  
                                     
-                               
                             </li>
                         </ul>
                     </div>
