@@ -9,10 +9,11 @@ body{
 .main-container{
     width: 75%;
     margin: 0 auto;
-    // height: $height_container;
+    height: 100%;
     // DEBUG
     // border: 1px solid black;
 }
+
 // FLEX CONTAINER
 .flex-container{
     display: flex;

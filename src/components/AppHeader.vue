@@ -65,7 +65,7 @@ export default {
 </script>
 
 <template>
-    <header class="">
+    <header >
         <div class="main-container">
             <div class="flex-container">
                 <img src="../assets/img/dc-logo.png" alt="">
@@ -100,9 +100,7 @@ ul{
             // border-bottom: 1px solid $blu_active_border;
            
         }
-        // &:hover > {
-        //     border-bottom: $blu_active_border;
-        // }
+        
        
     }
 }
