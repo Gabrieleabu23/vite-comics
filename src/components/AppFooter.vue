@@ -79,7 +79,7 @@ export default {
 </script>
 <template>
     <div class="image_background">
-        <div class="main-container">
+        <div class="main-container flex-container">
             <ul class="col-5 flex-container">
                 <div v-for="(item, index) in list_info" :key="index" class="col-4">
                     <h3>{{ item.name }}</h3>
@@ -88,6 +88,7 @@ export default {
                     </li>
                 </div>
             </ul>
+            <img src="../assets/img/dc-logo-bg.png" alt="dc-logo-bg" class="zoomed_img">
         </div>
         <div class="social-container-bg">
             <div class="main-container">
@@ -111,7 +112,11 @@ export default {
 @import '../styles/general.scss';
 @import '../styles/partials/_variables';
 
-
+.zoomed_img{
+    width: 300px;
+    margin-right: 100px;
+    transform: scale(1.3);
+}
 .image_background {
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
@@ -168,6 +173,8 @@ h3 {
 }
 
 .social-container-bg {
+    position: relative;
+    z-index: 1;
     width: 100%;
     padding-bottom: 10px;
     height: calc($height_container + 20px);
