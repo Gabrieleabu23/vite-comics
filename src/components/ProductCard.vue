@@ -7,8 +7,10 @@ export default {
 }
 </script>
 <template>
-    <div class="col-2"><img :src="details.thumb" alt="">
-    <h6>{{details.series}}</h6></div>
+    <div class="col-2">
+        <a :href="`#${details.series}`"><img :src="details.thumb" :alt="details.series"></a>
+    <h6>{{details.series}}</h6>
+    </div>
 </template>
 <style lang="scss" scoped>
 

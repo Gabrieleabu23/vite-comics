@@ -121,7 +121,8 @@ export default {
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
     // height: 300px;
-    margin-bottom: 40px;
+    // DEBUG
+    // margin-bottom: 40px;
 }
 
 ul {
