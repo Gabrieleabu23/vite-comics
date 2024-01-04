@@ -12,7 +12,7 @@ export default {
                 {
                     name: 'COMICS',
                     url: '#COMICS',
-                    active: false
+                    active: true
                 },
                 {
                     name: 'MOVIES',
@@ -70,7 +70,7 @@ export default {
             <div class="flex-container">
                 <img src="../assets/img/dc-logo.png" alt="">
                 <ul class="flex-container">
-                    <li v-for="pages in listPages" :class="pages.active ? 'blu_active_border' : ''" @mouseover="pages.active=!pages.active" @mouseout="pages.active=!pages.active">
+                    <li v-for="pages in listPages" :class="pages.active ? 'blu_active_border' : ''" >
                         <a :href="pages.url" class="black_a_color">{{pages.name}}</a>
                     </li>
                 </ul>
